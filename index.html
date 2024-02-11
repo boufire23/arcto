@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Arcto</title>
@@ -9,7 +10,8 @@
 <body>
     <script src="script.js"></script>
     <header>
-        <img src="Assets/acrtoLogo.svg" alt="logo" >
+        
+        <div class="logo"><img src="Assets/acrtoLogo.svg" alt="logo" id="logoImg"></div>
         <ul class="navMenuList">
             <li><a href="#" id="homePage">Home</a></li>
             <li><a href="#" id="productsPage">Products</a></li>
@@ -20,5 +22,11 @@
             <a href="#">My Account</a>
         </div>
     </header>
+    <section class="searchSection">
+        <div class="searchContainer">
+            <input type="text" placeholder="Search." id="inputSearch">
+            <button type="button" id="searchBtn"><img src="Assets/search.svg" alt="search"></button>
+        </div>
+    </section>
 </body>
 </html>
